@@ -1,10 +1,10 @@
 package com.snsc.spring_HotelMS.model;
 
 import java.util.ArrayList;
+
 import java.util.Collection;
 import java.util.List;
 
-import org.springframework.boot.autoconfigure.web.WebProperties.Resources.Chain.Strategy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,7 +17,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -26,6 +25,11 @@ import lombok.Data;
 @Table(name="user_tbl")
 
 public class User implements UserDetails  {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
@@ -41,6 +45,7 @@ public class User implements UserDetails  {
 	@NotBlank(message = "phone Number is required")
 	private String phoneNumber;
 	
+	@NotBlank(message = "phone Number is required")
 	private String password;
 	
 	private String role;

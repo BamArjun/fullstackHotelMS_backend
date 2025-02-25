@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.snsc.spring_HotelMS.model.Booking;
 
 import lombok.Data;
 @Data
@@ -17,7 +16,7 @@ public class UserDTO {
 	private String name;
 	private String role;
 	private String phoneNUmber;
-	private List<Booking> booking = new ArrayList<>();
+	private List<BookingDTO> booking = new ArrayList<>();
 	
 
 }
