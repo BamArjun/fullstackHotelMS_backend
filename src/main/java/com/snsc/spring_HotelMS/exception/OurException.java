@@ -1,12 +1,12 @@
 package com.snsc.spring_HotelMS.exception;
 
-public class Exception extends RuntimeException {
+public class OurException extends RuntimeException {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public Exception(String message) {
+	public OurException(String message) {
 	super(message);
 	}
 
