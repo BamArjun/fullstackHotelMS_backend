@@ -1,6 +1,4 @@
 package com.snsc.spring_HotelMS.service;
-
-import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
